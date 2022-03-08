@@ -4,3 +4,6 @@
 Labeling_Path/.vs/Labeling_Path/v17/ipch/
 *.ipch
 *.tlog
+*.log
+Labeling_Path/Labeling_Path/Debug/Labeling_Path.obj
+*.pdb
