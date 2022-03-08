@@ -1,0 +1,20 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Labeling_Path, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Labeling_Path.Label_Path: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single[] fFractonalSynthesis : Public
+    Single[] fBWE_Array : Public
+    Single fBWE : Public
+  Methods:
+    Labeling_Path_Fractional_Synthesis(Single[,], Int32, Int32, Int32, Single): PrivateScope, Public, HideBySig
+    Diff_Fraction_Rates(Single, Single): PrivateScope, Public, HideBySig

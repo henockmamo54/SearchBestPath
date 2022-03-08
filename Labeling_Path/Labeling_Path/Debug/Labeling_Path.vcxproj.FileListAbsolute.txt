@@ -1,1 +1,2 @@
 C:\c_Myworkplace\C++\ProteinRateConstant\Labeling_Path\Labeling_Path\Debug\Labeling_Path.vcxproj.AssemblyReference.cache
+C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Labeling_Path\Labeling_Path\Debug\Labeling_Path.vcxproj.AssemblyReference.cache

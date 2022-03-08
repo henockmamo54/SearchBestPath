@@ -1,14 +1,10 @@
-﻿  Stdafx.cpp
-  AssemblyInfo.cpp
-  Labeling_Path.cpp
-C:\c_Myworkplace\C++\ProteinRateConstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(28,16): warning C4101: 'j1': unreferenced local variable
-C:\c_Myworkplace\C++\ProteinRateConstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(28,12): warning C4101: 'i1': unreferenced local variable
-C:\c_Myworkplace\C++\ProteinRateConstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(28,24): warning C4101: 'j0': unreferenced local variable
-C:\c_Myworkplace\C++\ProteinRateConstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(186,15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\c_Myworkplace\C++\ProteinRateConstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(194,15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\c_Myworkplace\C++\ProteinRateConstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(202,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
-C:\c_Myworkplace\C++\ProteinRateConstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(207): warning C4715: 'Labeling_Path::Label_Path::Diff_Fraction_Rates': not all control paths return a value
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+﻿  Labeling_Path.cpp
+C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(28,16): warning C4101: 'j1': unreferenced local variable
+C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(28,12): warning C4101: 'i1': unreferenced local variable
+C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(28,24): warning C4101: 'j0': unreferenced local variable
+C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(186,15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(194,15): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(202,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Labeling_Path\Labeling_Path\Labeling_Path.cpp(207): warning C4715: 'Labeling_Path::Label_Path::Diff_Fraction_Rates': not all control paths return a value
   AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  Labeling_Path.vcxproj -> C:\c_Myworkplace\C++\ProteinRateConstant\Labeling_Path\Debug\Labeling_Path.dll
+  Labeling_Path.vcxproj -> C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Run_Labeling_Path\Debug\Labeling_Path.dll

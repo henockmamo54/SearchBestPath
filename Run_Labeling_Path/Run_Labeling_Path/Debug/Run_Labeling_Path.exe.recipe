@@ -2,7 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\c_Myworkplace\C++\ProteinRateConstant\Run_Labeling_Path\Debug\Run_Labeling_Path.exe</FullPath>
+      <FullPath>C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Run_Labeling_Path\Debug\Labeling_Path.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Run_Labeling_Path\Debug\Run_Labeling_Path.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
