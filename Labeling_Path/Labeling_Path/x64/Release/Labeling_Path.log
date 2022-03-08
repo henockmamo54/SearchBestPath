@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Labeling_Path.cpp
+Labeling_Path.cpp(28): warning C4101: 'j1': unreferenced local variable
+Labeling_Path.cpp(28): warning C4101: 'i1': unreferenced local variable
+Labeling_Path.cpp(28): warning C4101: 'j0': unreferenced local variable
+Labeling_Path.cpp(186): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+Labeling_Path.cpp(194): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+Labeling_Path.cpp(202): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+a:\localprograms\labeling_path\labeling_path\labeling_path.cpp(207): warning C4715: 'Labeling_Path::Label_Path::Diff_Fraction_Rates': not all control paths return a value
+  Labeling_Path.vcxproj -> A:\current\Labeling_Path.dll
+  Labeling_Path.vcxproj -> A:\current\Labeling_Path.pdb (Full PDB)

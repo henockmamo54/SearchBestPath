@@ -1,0 +1,3 @@
+C:\c_Myworkplace\C++\ProteinRateConstant\Run_Labeling_Path\Run_Labeling_Path\Debug\Run_Labeling_Path.vcxproj.AssemblyReference.cache
+C:\c_Myworkplace\C++\ProteinRateConstant\Run_Labeling_Path\Run_Labeling_Path\Debug\Run_Labeling_Path.vcxproj.SuggestedBindingRedirects.cache
+C:\c_Myworkplace\C++\ProteinRateConstant\Run_Labeling_Path\Run_Labeling_Path\Debug\Run_Labeling_Path.vcxproj.CopyComplete

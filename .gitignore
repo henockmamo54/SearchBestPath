@@ -1,0 +1,6 @@
+*.db
+*.opendb
+*.suo
+Labeling_Path/.vs/Labeling_Path/v17/ipch/
+*.ipch
+*.tlog
