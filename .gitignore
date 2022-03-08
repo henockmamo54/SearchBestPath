@@ -13,3 +13,6 @@ Run_Labeling_Path/Run_Labeling_Path/Debug/
 Run_Labeling_Path/Debug/Run_Labeling_Path.exe
 Run_Labeling_Path/Debug/Labeling_Path.dll
 Run_Labeling_Path/Debug/
+Run_Labeling_Path/.vs/Run_Labeling_Path/v17/Solution.VC.db-shm
+*.db-shm
+*.db-wal

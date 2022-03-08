@@ -50,7 +50,8 @@ List<String^>^ Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ 
 
 	for (i = 0; i < Ncol; i++)
 	{
-		index_X[i, 0] = i;
+		//index_X[i, 0] = i;
+		index_X[0, i] = i;
 	}
 
 	for (i = 0; i < Nrow; i++)
@@ -70,7 +71,12 @@ List<String^>^ Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ 
 			//
 			//if (fBest_Fractional_Synthesis_Rate_Time[i, j - 1] == Fractional_Synthesis_Rate[i, j - 1] &&
 				//Fractional_Synthesis_Rate[i, j] > Fractional_Synthesis_Rate[i, j - 1] )
+
+			if (Fractional_Synthesis_Rate[i, j] <= 0)
+				continue;
+
 			if (Fractional_Synthesis_Rate[i, j] > fBest_Fractional_Synthesis_Rate_Time[i, j - 1])
+
 			{
 
 				Score_Fractional_Synthesis_Rate_Time[i, j] = Score_Fractional_Synthesis_Rate_Time[i, j - 1] +
@@ -156,6 +162,7 @@ List<String^>^ Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ 
 		{
 			printf("Next[%d, %d] = %d %d  ", i, j, index_X[i, j], index_Y[i, j]);
 			temp_path = temp_path + i.ToString() + "," + j.ToString() + " ";
+			//temp_path = temp_path + fBest_Fractional_Synthesis_Rate_Time[i, j].ToString() +" ";
 		}
 		puts("");
 		bestpaths->Add(temp_path->Trim());
