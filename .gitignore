@@ -7,3 +7,9 @@ Labeling_Path/.vs/Labeling_Path/v17/ipch/
 *.log
 Labeling_Path/Labeling_Path/Debug/Labeling_Path.obj
 *.pdb
+Labeling_Path/
+*.obj
+Run_Labeling_Path/Run_Labeling_Path/Debug/
+Run_Labeling_Path/Debug/Run_Labeling_Path.exe
+Run_Labeling_Path/Debug/Labeling_Path.dll
+Run_Labeling_Path/Debug/

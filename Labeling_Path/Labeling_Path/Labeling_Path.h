@@ -3,6 +3,7 @@
 #pragma once
 
 using namespace System;
+using namespace System::Collections::Generic;
 
 namespace Labeling_Path {
 
@@ -11,14 +12,14 @@ namespace Labeling_Path {
 		// TODO: Add your methods for this class here.
 
 	public:
-		array <float> ^fFractonalSynthesis, ^fBWE_Array;
+		array <float>^ fFractonalSynthesis, ^ fBWE_Array;
 		float fBWE;
 
-		int Labeling_Path_Fractional_Synthesis(array <float, 2> ^ Fractional_Synthesis_Rate, 
+		List<String^>^ Labeling_Path_Fractional_Synthesis(array <float, 2>^ Fractional_Synthesis_Rate,
 			int Nraw, int Ncol, int NEH, float fBWE);
 
 
-		float Diff_Fraction_Rates(float Fractional_Synthesis_Rate1, 
+		float Diff_Fraction_Rates(float Fractional_Synthesis_Rate1,
 			float Fractional_Synthesis_Rate2);
 
 	};

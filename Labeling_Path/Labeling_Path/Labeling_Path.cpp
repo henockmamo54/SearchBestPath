@@ -23,7 +23,7 @@ using namespace System::Collections::Generic;
 *   and the rows are the time course values.
 *
 */
-int Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ Fractional_Synthesis_Rate,
+List<String^>^ Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ Fractional_Synthesis_Rate,
 	int Nrow, int Ncol, int NEH, float fBWE)
 {
 	int i, j, i1, j1, i0, j0, iMax;
@@ -39,6 +39,7 @@ int Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ Fractional_
 	List < String^ >^ bestpaths = gcnew List<String^>();
 
 	List<float>^ bestpaths_score = gcnew List<float>();
+	List<String^>^ bestpaths_and_score = gcnew List<String^>();
 
 	float fSum, ftemp, fMinSlope;
 
@@ -158,15 +159,16 @@ int Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ Fractional_
 		}
 		puts("");
 		bestpaths->Add(temp_path->Trim());
+		bestpaths_and_score->Add(temp_path->Trim());
 	}
 
 	ftemp = -1000000.;
 
 	for (i = 0; i < Nrow; i++)
 	{
-		printf("tt %10.5f\n", Score_Fractional_Synthesis_Rate_Time[i, Ncol - 1]);
+		printf("%10.5f\n", Score_Fractional_Synthesis_Rate_Time[i, Ncol - 1]);
 		bestpaths_score->Add(Score_Fractional_Synthesis_Rate_Time[i, Ncol - 1]);
-
+		bestpaths_and_score[i] = bestpaths_and_score[i] + "#" + (Score_Fractional_Synthesis_Rate_Time[i, Ncol - 1]).ToString();
 		if (Score_Fractional_Synthesis_Rate_Time[i, Ncol - 1] > ftemp)
 		{
 			iMax = i;
@@ -182,7 +184,7 @@ int Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ Fractional_
 
 
 
-	return 0;
+	return bestpaths_and_score;
 }
 
 

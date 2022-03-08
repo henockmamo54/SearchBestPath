@@ -1,8 +1,0 @@
-﻿  stdafx.cpp
-  AssemblyInfo.cpp
-  Run_Labeling_Path.cpp
-C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Run_Labeling_Path\Run_Labeling_Path\Run_Labeling_Path.cpp(34,58): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
-  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  Run_Labeling_Path.vcxproj -> C:\c_Myworkplace\C++\ProteinRateConstant\git\ProteinRateconstant\Run_Labeling_Path\Debug\Run_Labeling_Path.exe
