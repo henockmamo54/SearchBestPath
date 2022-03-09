@@ -47,7 +47,6 @@ List<String^>^ Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ 
 		for (j = 0; j < Ncol; j++)
 			Score_Fractional_Synthesis_Rate_Time[i, j] = 0; // -1. * (Ncol + Nrow);
 
-
 	for (i = 0; i < Ncol; i++)
 	{
 		//index_X[i, 0] = i;
@@ -72,8 +71,22 @@ List<String^>^ Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ 
 			//if (fBest_Fractional_Synthesis_Rate_Time[i, j - 1] == Fractional_Synthesis_Rate[i, j - 1] &&
 				//Fractional_Synthesis_Rate[i, j] > Fractional_Synthesis_Rate[i, j - 1] )
 
-			if (Fractional_Synthesis_Rate[i, j] <= 0)
-				continue;
+			////if (Fractional_Synthesis_Rate[i, j] <= 0) {
+			////	fBest_Fractional_Synthesis_Rate_Time[i, j] = NAN;
+			////	index_X[i, j] = -1;
+			////	index_Y[i, j] = -1;
+			////	continue;
+			////}
+
+			////// to hold the previous none zero fBest_Fractional_Synthesis_Rate_Time
+			////float fBest_Fractional_Synthesis_Rate_Time_previous = fBest_Fractional_Synthesis_Rate_Time[i, j - 1];
+			////float counter = 1;
+			////while (fBest_Fractional_Synthesis_Rate_Time_previous == NAN)
+			////{
+			////	fBest_Fractional_Synthesis_Rate_Time_previous = fBest_Fractional_Synthesis_Rate_Time[i, j - 1 - counter];
+			////	counter++;
+			////}
+
 
 			if (Fractional_Synthesis_Rate[i, j] > fBest_Fractional_Synthesis_Rate_Time[i, j - 1])
 
