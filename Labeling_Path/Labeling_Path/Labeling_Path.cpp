@@ -47,15 +47,20 @@ List<String^>^ Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ 
 		for (j = 0; j < Ncol; j++)
 			Score_Fractional_Synthesis_Rate_Time[i, j] = 0; // -1. * (Ncol + Nrow);
 
-	for (i = 0; i < Ncol; i++)
+	//for (i = 0; i < Ncol; i++)
+	for (i = 0; i < Nrow; i++)
 	{
-		//index_X[i, 0] = i;
-		index_X[0, i] = i;
+		index_X[i, 0] = i;
+		//index_X[0, i] = i;
 	}
 
 	for (i = 0; i < Nrow; i++)
 	{
+		/*if (isnan(Fractional_Synthesis_Rate[i, 0]))
+			fBest_Fractional_Synthesis_Rate_Time[i, 0] = 0;
+		else*/
 		fBest_Fractional_Synthesis_Rate_Time[i, 0] = Fractional_Synthesis_Rate[i, 0];
+
 	}
 
 	for (i = 0; i < Nrow; i++)
@@ -64,29 +69,9 @@ List<String^>^ Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ 
 		for (j = 1; j < Ncol; j++)
 		{
 			fMinSlope = 100.0;
-			//
-			//frist checks to see if the next point from this peptide's time course is monotonic
-			//if yes, then it will accept this value for the peptides' time course.
-			//
-			//if (fBest_Fractional_Synthesis_Rate_Time[i, j - 1] == Fractional_Synthesis_Rate[i, j - 1] &&
-				//Fractional_Synthesis_Rate[i, j] > Fractional_Synthesis_Rate[i, j - 1] )
+			
 
-			////if (Fractional_Synthesis_Rate[i, j] <= 0) {
-			////	fBest_Fractional_Synthesis_Rate_Time[i, j] = NAN;
-			////	index_X[i, j] = -1;
-			////	index_Y[i, j] = -1;
-			////	continue;
-			////}
-
-			////// to hold the previous none zero fBest_Fractional_Synthesis_Rate_Time
-			////float fBest_Fractional_Synthesis_Rate_Time_previous = fBest_Fractional_Synthesis_Rate_Time[i, j - 1];
-			////float counter = 1;
-			////while (fBest_Fractional_Synthesis_Rate_Time_previous == NAN)
-			////{
-			////	fBest_Fractional_Synthesis_Rate_Time_previous = fBest_Fractional_Synthesis_Rate_Time[i, j - 1 - counter];
-			////	counter++;
-			////}
-
+			if (isnan(Fractional_Synthesis_Rate[i, j])) continue;
 
 			if (Fractional_Synthesis_Rate[i, j] > fBest_Fractional_Synthesis_Rate_Time[i, j - 1])
 
@@ -105,30 +90,12 @@ List<String^>^ Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ 
 			{
 				for (i0 = 0; i0 < Nrow; i0++)
 				{
-					//fSum = Score_Fractional_Synthesis_Rate_Time[i0, j - 1] +
-						//Diff_Fraction_Rates(Fractional_Synthesis_Rate[i, j - 1], Fractional_Synthesis_Rate[i0, j],
-							//NEH, fBWE);
-
-					//fSum = Score_Fractional_Synthesis_Rate_Time[i0, j - 1] + 
+					
 					fSum = Score_Fractional_Synthesis_Rate_Time[i, j - 1] +
-						//Diff_Fraction_Rates(Fractional_Synthesis_Rate[index_X[i, j - 1], index_Y[i, j - 1]], Fractional_Synthesis_Rate[i0, j]);
-
 						Diff_Fraction_Rates(fBest_Fractional_Synthesis_Rate_Time[i, j - 1], Fractional_Synthesis_Rate[i0, j]);
 
-					//if(7 == i)
-					//printf("%d %d, %3.2f %3.2f %3.2f %3.2f %4.3f %3.2f;  ", i0, j, fBest_Fractional_Synthesis_Rate_Time[i, j - 1], Fractional_Synthesis_Rate[i0, j], 
-						//fSum, Score_Fractional_Synthesis_Rate_Time[i, j-1],
-						//Diff_Fraction_Rates(fBest_Fractional_Synthesis_Rate_Time[i, j - 1], Fractional_Synthesis_Rate[i0, j] ),
-						//Score_Fractional_Synthesis_Rate_Time[i, j]);
 					if (fSum >= Score_Fractional_Synthesis_Rate_Time[i, j])
 					{
-
-						//when multiple paths are possible, choose the path with the least slope
-						// this should always find a solution, if it exists.
-						//if (fMinSlope > Math::Abs(Fractional_Synthesis_Rate[i0, j] - fBest_Fractional_Synthesis_Rate_Time[i, j - 1]))
-						//if(Fractional_Synthesis_Rate[i0, j] > fBest_Fractional_Synthesis_Rate_Time[i, j - 1] &&
-							//fMinSlope > Fractional_Synthesis_Rate[i0, j] - fBest_Fractional_Synthesis_Rate_Time[i, j - 1])
-						//if (fMinSlope > Fractional_Synthesis_Rate[i0, j] - fBest_Fractional_Synthesis_Rate_Time[i, j - 1] )
 						{
 							fMinSlope = Fractional_Synthesis_Rate[i0, j] - fBest_Fractional_Synthesis_Rate_Time[i, j - 1];
 
@@ -145,8 +112,7 @@ List<String^>^ Label_Path::Labeling_Path_Fractional_Synthesis(array <float, 2>^ 
 
 
 					}
-				}
-				//puts("");
+				}				
 
 			}
 		}
