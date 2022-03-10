@@ -19,8 +19,13 @@ namespace Labeling_Path {
 			int Nraw, int Ncol, int NEH, float fBWE);
 
 
+		List<String^>^ Labeling_Path_Fractional_Synthesis2(array <float, 2>^ Fractional_Synthesis_Rate,
+			int Nraw, int Ncol, int NEH, float fBWE);
+
+
 		float Diff_Fraction_Rates(float Fractional_Synthesis_Rate1,
 			float Fractional_Synthesis_Rate2);
+
 
 	};
 }

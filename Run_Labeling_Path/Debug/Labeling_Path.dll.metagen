@@ -17,4 +17,5 @@ Class Labeling_Path.Label_Path: AutoLayout, AnsiClass, Class, Public, BeforeFiel
     Single fBWE : Public
   Methods:
     Labeling_Path_Fractional_Synthesis(Single[,], Int32, Int32, Int32, Single): PrivateScope, Public, HideBySig
+    Labeling_Path_Fractional_Synthesis2(Single[,], Int32, Int32, Int32, Single): PrivateScope, Public, HideBySig
     Diff_Fraction_Rates(Single, Single): PrivateScope, Public, HideBySig

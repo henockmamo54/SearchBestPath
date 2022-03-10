@@ -45,7 +45,7 @@ int main(array<System::String^>^ args)
 		printf("\n");
 	}
 
-	List<String^>^ values = getPath->Labeling_Path_Fractional_Synthesis(mock_Time_Course, NProt, NLim, 0, 0.);
+	List<String^>^ values = getPath->Labeling_Path_Fractional_Synthesis(mock_Time_Course, NProt, NLim, 0, 0.); 
 
 	return 0;
 }
